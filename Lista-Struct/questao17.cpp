@@ -35,8 +35,17 @@ struct Banco{
     int deposito(int numeroConta){
         for (int i= 0 ; i < numContas ; i ++){
             if (conta[i].numero == numeroConta){
-                
+                conta[i].saldo = conta[i].saldo + valor;
             }
+
+            //criar as transacoes;
+            Transacao t;
+            t.tipo = "Depósito";
+            t.valor = valor;
+            t.data = data;
+
+            //adcionar para o extrato
+            
 
         }
 
